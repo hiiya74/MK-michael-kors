@@ -1,0 +1,73 @@
+.changing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: textChange 40s alternate;
+}
+
+@keyframes textChange {
+    0% { content: "Find Your Perfect Bag Today!"; }
+    25% { content: "Carry Style, Carry Comfort."; }
+    50% { content: "Bags That Define You."; }
+    75% { content: "Pack Smart, Travel Far."; }
+}
+
+.changing-text::after {
+    content: "Find Your Perfect Bag Today!";
+    animation: textChange 40s alternate;
+}
+
+.hover-image {
+transition: transform 0.3s ease-in-out;
+cursor: pointer;  
+}
+
+.hover-image:hover {
+transform: scale(1.1); /* Increases the size by 10% */
+}
+/* Make the first navbar sticky */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+#search-box {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: rgba(165, 105, 56, 0.594);
+    padding:2px;
+    border: 2px solid #520909;
+    border-radius: 5px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Full-screen video */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.bg-brown {
+    background-color: #5a3e2b;
+}
+a.text-white:hover {
+    color: #d4a373 !important;
+    text-decoration: underline;
+}
